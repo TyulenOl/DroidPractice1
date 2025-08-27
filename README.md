@@ -35,6 +35,7 @@
 * Внедрение зависимостей через Hilt.
 
 ## Ссылки
+* Single Activity - https://apptractor.ru/info/articles/chto-takoe-single-activity-arhitektura-v-android.html
 * Clean Architecture - https://habr.com/ru/companies/bsl/articles/788940/
 * MVVM - https://medium.com/@sks727633/mvvm-with-jetpack-compose-structuring-your-app-for-clean-architecture-42f4bad4c99e
 * ViewModel - https://developer.android.com/topic/libraries/architecture/viewmodel?hl=ru
