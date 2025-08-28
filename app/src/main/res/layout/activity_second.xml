@@ -1,18 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".SecondActivity">
+    android:fillViewport="true">
 
-    <Toolbar
-        android:id="@+id/toolbar"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:title="@string/article_title"
-        android:navigationIcon="@drawable/arrow_back" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".SecondActivity">
 
-</LinearLayout>
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:navigationIcon="@drawable/arrow_back"
+            android:title="@string/article_title" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Что значит мем «Бу! Испугался?»"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="На вирусной картинке изображен огромный кот с человеческим лицом — но на самом деле это не настоящее животное, а тряпичная кукла, которая неоднократно появлялась в выпусках одного из популярных американских телешоу под именем Вискерса. Один из пользователей интернета, сделав скриншот кукольного кота, создал из него видео, наложив монолог, сгенерированный нейросетями: «Бу! Испугался? Не бойся. Я друг, я тебя не обижу. Иди сюда, иди ко мне. Сядь рядом со мной. Посмотри мне в глаза. Ты видишь меня? Я тоже тебя вижу. Давай смотреть друг на друга до тех пор, пока наши глаза не устанут. Ты не хочешь? Почему? Что-то не так?»."
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/memeImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="ddd" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Мем выглядит особенно пугающим — главным образом из-за того, что морда кота напоминает человеческое лицо.
+
+Видеоролики с ним, в которых можно услышать странную музыку или не менее пугающие монологи, наводнили YouTube: одни зрители не могут от них оторваться, другие же — боятся их даже открывать и признаются, что им некомфортно от их просмотра."
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <Switch
+            android:id="@+id/toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Прочитано " />
+
+
+    </LinearLayout>
+</ScrollView>
